@@ -33,4 +33,18 @@ public class Yahtzee
         roll();
         return getValue();
     }
+    
+    public int roll(int dieNumber) {
+        int count;
+        for (count = 0; count < 3; count++) {
+            if () {
+                roll();
+                return getValue;
+            }
+        }
+    }
+    
+    public summarize () {
+        
+    }
 }

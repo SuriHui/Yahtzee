@@ -9,6 +9,4 @@ comment3.params=
 comment3.target=int\ getValue()
 comment4.params=
 comment4.target=int\ rollAndGetValue()
-comment5.params=
-comment5.target=int\ summarize()
-numComments=6
+numComments=5
