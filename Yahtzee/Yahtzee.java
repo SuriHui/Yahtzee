@@ -35,16 +35,28 @@ public class Yahtzee
     }
     
     public int roll(int dieNumber) {
-        int count;
-        for (count = 0; count < 3; count++) {
-            if () {
-                roll();
-                return getValue;
+        int count = 0;
+        count++;
+        for (count = 0; count <= 3; count++) {
+            if (dieNumber == 1) {
+                die1.roll();
+                return getValue();
+            } else if (dieNumber == 2) {
+                die2.roll();
+                return getValue();
+            } else if (dieNumber == 3) {
+                die3.roll();
+                return getValue();
+            } else if (dieNumber == 4) {
+                die4.roll();
+                return getValue();
+            } else if (dieNumber == 5) {
+                die5.roll();
+                return getValue();
+            } else if (count > 3) {
+                System.out.print("YOU. SPECIFICALLY YOU CANNOT REROLL MORE THAN 3 TIMES!!!");
             }
         }
-    }
-    
-    public summarize () {
-        
+        return getValue();
     }
 }

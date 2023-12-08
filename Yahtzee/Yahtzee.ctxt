@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=int\ getValue()
 comment4.params=
 comment4.target=int\ rollAndGetValue()
-numComments=5
+comment5.params=dieNumber
+comment5.target=int\ roll(int)
+numComments=6
