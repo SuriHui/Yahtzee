@@ -54,9 +54,20 @@ public class Yahtzee
                 die5.roll();
                 return getValue();
             } else if (count > 3) {
-                System.out.print("YOU. SPECIFICALLY YOU CANNOT REROLL MORE THAN 3 TIMES!!!");
+                System.out.print("YOU. SPECIFICALLY YOU. CANNOT REROLL MORE THAN 3 TIMES!!!");
             }
         }
+        this.getValue();
         return getValue();
+    }
+    
+    public String summarize() {
+        String sum = "1 - " + dieNumber() + "2 - " + dieNumber() +
+    }
+    
+    
+    public String toString() {
+        String dieStr = "Dice Values: " + die1.getValue() + " " + die2.getValue() + " " + die3.getValue() + " " + die4.getValue() + " " + die5.getValue();  
+        return dieStr;
     }
 }
