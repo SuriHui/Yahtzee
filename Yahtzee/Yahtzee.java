@@ -34,37 +34,32 @@ public class Yahtzee
         return getValue();
     }
     
-    public int roll(int dieNumber) {
+    public void roll(int dieNumber) {
         int count = 0;
         count++;
         for (count = 0; count <= 3; count++) {
             if (dieNumber == 1) {
                 die1.roll();
-                return getValue();
             } else if (dieNumber == 2) {
                 die2.roll();
-                return getValue();
             } else if (dieNumber == 3) {
                 die3.roll();
-                return getValue();
             } else if (dieNumber == 4) {
                 die4.roll();
-                return getValue();
             } else if (dieNumber == 5) {
                 die5.roll();
-                return getValue();
             } else if (count > 3) {
-                System.out.print("YOU. SPECIFICALLY YOU. CANNOT REROLL MORE THAN 3 TIMES!!!");
+                System.out.print("YOU CANNOT REROLL MORE THAN 3 TIMES!!!");
             }
         }
-        this.getValue();
-        return getValue();
     }
     
-    public String summarize() {
-        String sum = "1 - " + dieNumber() + "2 - " + dieNumber() +
+    public void summarize() {
+        String[] strDie = {"1 - ","2 - ","3 - ","4 - ","5 - "};
+        for (int value = 0; value < strDie.length; value++) {
+            System.out.println(strDie[value]);
+        }
     }
-    
     
     public String toString() {
         String dieStr = "Dice Values: " + die1.getValue() + " " + die2.getValue() + " " + die3.getValue() + " " + die4.getValue() + " " + die5.getValue();  
