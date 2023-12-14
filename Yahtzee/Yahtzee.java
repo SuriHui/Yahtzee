@@ -63,7 +63,7 @@ public class Yahtzee
                fives++;
            }
         }
-        return "1 - " + ones + "2 - " + twos + "3 - " + threes + "4 - " + fours + "5 - " + fives;
+        return "1 - " + ones + ", 2 - " + twos + ", 3 - " + threes + ", 4 - " + fours + ", 5 - " + fives;
     }
     
     public String toString() {
