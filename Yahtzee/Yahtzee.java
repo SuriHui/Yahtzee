@@ -51,15 +51,15 @@ public class Yahtzee
         int fours = 0;
         int fives = 0;
         for (int i = 0; i < dice.length - 1; i++) {
-           if (dice[i].getValue == 1) {
+           if (dice[i].getValue() == 1) {
                ones++;
-           } else if (dice[i].getValue == 2) {
+           } else if (dice[i].getValue() == 2) {
                twos++;
-           } else if (dice[i].getValue == 3) {
+           } else if (dice[i].getValue() == 3) {
                threes++;
-           } else if (dice[i].getValue == 4) {
+           } else if (dice[i].getValue() == 4) {
                fours++;
-           } else if (dice[i].getValue == 5) {
+           } else if (dice[i].getValue() == 5) {
                fives++;
            }
         }
